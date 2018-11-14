@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title> <!-- remember to change this -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="custom.js"></script></head>
+<body>
+	<header>
+		<div class="name">
+			<b>Pantherbotics</b>
+		</div>
+		<nav>
+			<ul class="inline">
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="about.html">About Us</a></li>	
+				<li> <a href="pubevents.html">Events</a></li>
+				<li> <a href="pubgallery.html">Gallery</a></li>	
+				<li> <a href="sponsors.html">Sponsors</a></li> <!-- remember to change this -->
+				<li> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="main">
+		<h2>PORTFOLIO</h2>
+		<div id="myBtnContainer">
+		  <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+		  <button class="btn active" onclick="filterSelection('competition')"> 2018 Competition</button>
+		  <button class="btn active" onclick="filterSelection('base')"> Miss Ventura on Base</button>
+		  <button class="btn active" onclick="filterSelection('other')"> Other</button>
+		</div>
+
+		<!-- Portfolio Gallery Grid -->
+		<div class="row" id="rowgal">
+		  	<div class="column other">
+		    	<div class="content">
+			    	<img id="gal" src="pic1.jpg" alt="... Sept. 2018" style="width:100%">
+			    	<h3>Mountains</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column base">
+			    <div class="content">
+			    	<img id="gal" src="Robot with F-14.jpg" alt="Students and robot with a F-14... Aug. 2018" style="width:100%">
+			    	<h3>Lights</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column competition">
+			    <div class="content">
+					<img id="gal" src="Team 3863.jpg" alt="Members of Team 3863... Sept. 2018" style="width:100%;">
+			    	<h3>Team 3863</h3>
+			    	<p>7 members of Team 3863.</p>
+			    </div>
+			</div>
+			<div class="column other">
+			    <div class="content">
+					<img id="gal" src="pic2.jpg" alt=".... Sept. 2018" style="width:100%;">
+			    	<h3>Fast</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column competition">
+			    <div class="content">
+					<img id="gal" src="pic3.jpg" alt="... Sept. 2018" style="width:100%;">
+			    	<h3>Classic</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column competition">
+			    <div class="content">
+					<img id="gal" src="pic4.jpg" alt="... Sept. 2018" style="width:100%;">
+			    	<h3>Man</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column competition">
+			    <div class="content">
+					<img id="gal" src="pic5.jpg" alt="Sept. 2018" style="width:100%;">
+			    	<h3>Man</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column other">
+			    <div class="content">
+					<img id="gal" src="Phil Hampton Dr, Erika Beck C Seabury, Aaron Fang, Maria Shutterer, Max Soury, John Dailey Jeanette Shultz.jpg" alt="... Sept. 2018" style="width:100%;">
+			    	<h3>Woman</h3>
+			    	<p>Phil Hampton Dr, Erika Beck C Seabury, Aaron Fang, Maria Shutterer, Max Soury, John Dailey Jeanette Shultz</p>
+			    </div>
+			</div>
+			<div class="column base">
+			    <div class="content">
+			    	<img id="gal" src="Miss Ventura.jpg" alt="... Aug. 2018" style="width:100%;">
+			    	<h3>Mountains</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column base">
+			    <div class="content">
+			    	<img id="gal" src="Miss Ventura 2.jpg" alt="... Aug. 2018" style="width:100%;">
+			    	<h3>Mountains</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+			<div class="column base">
+			    <div class="content">
+			    	<img id="gal" src="Kids + robot.jpg" alt="... Aug 2018" style="width:100%;">
+			    	<h3>Mountains</h3>
+			    	<p>Lorem ipsum dolor..</p>
+			    </div>
+			</div>
+		<!-- END GRID -->
+		</div>
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- The grid: four columns -->
+		<!-- <div class="row">
+		  <div class="column">
+		    <img src="pic1.jpg" alt="Nature" onclick="openImg(this);">
+		  </div>
+		  <div class="column">
+		    <img src="pic2.jpg" alt="Snow" onclick="openImg(this);">
+		  </div>
+		  <div class="column">
+		    <img src="pic3.jpg" alt="Mountains" onclick="openImg(this);">
+		  </div>
+		  <div class="column">
+		    <img src="pic4.jpg" alt="Lights" onclick="openImg(this);">
+		  </div>
+		</div>
+ -->
+		<!-- The expanding image container -->
+		<!-- <div class="container"> -->
+		  <!-- Close the image -->
+		 <!--  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+		  <!-- Expanded image -->
+		 <!--  <img id="expandedImg" style="width:100%"> -->
+
+		  <!-- Image text -->
+		  <!-- <div id="imgtext"></div>
+		</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	<div class="row">
+		<footer>
+			<div class="col-md-1"></div>
+			<div class="col-md-1"><img id="footpic" alt="Twitter" src="twitsym.jpg"></div>
+			<div class="col-md-1"><img id="footpic" alt="Facebook" src="fbsym.jpg"> </div>
+			<div class="col-md-1"><img id="footpic" alt="Instagram" src="instasym.jpg"></div>
+			<div class="col-md-1"><img id="footpic" alt="Github" src="gitsym.jpg"></div>
+			<div class="col-md-1"><img id="footpic" alt="GrabCad" src="grabsym.jpg"></div>
+			<div class="col-md-1"><img id="footpic" alt="Youtube" src="ytubsym.jpg"></div>
+			<div class="col-md-1"><img id="footpic" alt="FIRST" src="firstsym.jpg"></div>
+			<div class="col-md-2"></div>
+		</footer>
+	</div>
+</body>
+</html>

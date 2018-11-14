@@ -1,0 +1,344 @@
+	body {
+		background-color: #000000;
+		font-family: georgia;
+		color: white;
+	}
+
+
+
+
+
+/*Nav Code*/
+	header {
+		margin-right: 10px;
+		padding: 0px;
+		font-variant: small-caps;
+		color: black;
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		background: rgba(255, 255, 255, 0.70);
+	}
+
+	nav {
+		text-align: right;
+	}
+
+	.name {
+		float:left;
+		font-size: 45px;
+		margin-left: 5%;
+		text-shadow: 3px 3px yellow; 
+	}
+
+	ul {
+		font-size: 23px;
+		padding-top: 20px;
+		padding-bottom: 12px;
+	    list-style-type: none;
+	    overflow: hidden;
+	}
+
+	.inline li{
+		display: inline;
+		padding: 15px;
+		border: 30px;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+		border: inset black;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	.inline a:hover {
+		color: yellow;
+		border: inset yellow;
+		border-radius: 5px;
+		background-color: black;
+	}
+
+
+
+
+
+/*Main Code*/
+	.main {
+		font-size: 20px;
+		margin-top: 85px;
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+
+	.wrapper {
+		text-align: center;
+		background: black;
+		color: #E3E5E0;
+		margin: 0% auto;
+		padding: 10px;
+		margin-bottom: 20px;
+		font-family: georgia;
+		border: double 10px #E8E241;
+		float: center;
+	}
+	.wrapper:after {
+		display: block;
+		clear: both;
+		content: "";
+		height:0; /*wont turn off the other code*/
+		overflow: hidden;
+	}
+
+
+
+
+
+/*Home Code*/
+	#headerhome {
+		margin-right: 10px;
+		padding: 0px;
+		font-variant: small-caps;
+		color: black;
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		background-color: lightgrey;
+	}
+
+	#homebackground {
+		background: linear-gradient(
+			    to right,
+			    rgba(0, 0, 0, 0),
+			    rgba(255, 255, 255, 50)
+			  ),url(logoedit.jpg);
+	    background-attachment: fixed;
+	    background-position: auto;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 100px;
+	}
+
+
+	#mainhome {
+		font-size: 20px;
+		margin-top: 85px;
+	}
+
+	#homerow {
+		color: black;
+		text-align: center;
+		font-size: 25px;
+		margin: 0px;
+
+	}
+
+	#homedots {
+		color: black;
+		text-align: center;
+		line-height: .8;
+	}
+
+
+
+
+/*About Code*/
+	#aboutrow {
+		margin-top: 10px;
+	}
+
+	#aboutmiddle {
+		padding-left: 125px; 
+		padding-right: 125px; 
+		margin-top: 200px;
+	}
+
+	#aboutpic {
+		width: 210px;
+		height: 210px;
+		border-radius: 110px;
+		border: 3px dotted white;
+	}
+
+
+
+
+	/*Calendar Code*/
+	#calendar {
+		border-width:0;
+		width: 100%;
+		border: 12px double yellow;
+		padding: 10px;
+		height: 800px;
+		margin-bottom: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Gallery Code*/
+	.column {
+	    float: left;
+	    width: 33.33%;
+	    display: none; /* Hide all elements by default */
+	}
+
+	/* Clear floats after rows */ 
+	#rowgal:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+
+	#gal {
+		width:33.33333%;
+		height: 300px;
+		border: 4px inset white;
+	}
+
+
+	/* The "show" class is added to the filtered elements */
+	.show {
+	  display: block;
+	}
+
+	.content {
+	    padding: 10px;
+		font-size: 18px;
+		font-family: georgia;
+		position: static;
+	}
+
+	/* Style the buttons */
+	.btn {
+	  border: none;
+	  outline: none;
+	  padding: 12px 16px;
+	  background-color: white;
+	  cursor: pointer;
+		background-color: #E8E241;
+		color: #464344;
+		font-variant: small-caps;  
+	}
+
+	.btn:hover {
+		background-color: #464344;
+		color: #E8E241;
+	}
+
+	.btn:active {
+		background-color: #464344;
+		color: #E8E241;
+	}
+
+
+
+
+
+/*Sponsors Code*/
+	#sponsorpic {
+		border: 5px double yellow;
+		padding: 10px;
+		background: black;
+		width: 20%;
+		margin-right: 20px; 
+		height: 200px;
+	}
+
+	.sponstext {
+		width: 70%;
+	}
+
+	#spondot {
+		padding: 15px;
+	}
+
+
+
+
+/*Contact Form Code*/
+	input[type=text], select, textarea {
+	    width: 100%;
+	    padding: 10px;
+	    border: 1px solid black;
+	    border-radius: 5px;
+	    box-sizing: border-box;
+	    margin-top: 5px;
+	    margin-bottom: 10px;
+	    resize: vertical;
+	    color: black;
+	    font-size: 15px;
+	    height: 40px;
+	}
+
+	input[type=submit] {
+		background-color: black;
+	    color: #E8E241;
+	    border: 4px inset #E8E241;
+	    padding: 2px 10px;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    font-variant: small-caps;
+	}
+
+	input[type=submit]:hover {
+	    background-color: #E8E241;
+	    color: black;
+	    border: 4px outset #464344;
+	    border-radius: 4px;
+	    font-variant: small-caps;
+	}
+
+	#contactcontainer {
+	    border-radius: 5px;
+	    background-color: #C6C2C3;
+	    padding: 20px;
+	    color: black;
+	    font-variant: small-caps;
+	    font-size: 18px;
+	}
+
+	#contactheader {
+		color:white;
+		font-variant: small-caps;
+	}
+
+
+
+
+
+/*Footer Code*/
+	#footpic {
+		height: 45px;
+		width: 45px;
+		margin-top: 10px;
+		filter: grayscale();
+		border: 2px solid white;
+		border-radius: 70px; 
+		margin-left: 200px;
+		margin-right: 150px;
+	}
+
+	footer {
+		height: 65px;
+		background-color: #464344;
+		position: relative;
+	  	bottom: 0;
+	}
