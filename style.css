@@ -17,7 +17,7 @@
 		position: fixed;
 		width: 100%;
 		top: 0px;
-		background: rgba(255, 255, 255, 0.70);
+		background: lightgrey;
 	}
 
 	nav {
@@ -96,23 +96,13 @@
 
 
 /*Home Code*/
-	#headerhome {
-		margin-right: 10px;
-		padding: 0px;
-		font-variant: small-caps;
-		color: black;
-		position: fixed;
-		width: 100%;
-		top: 0px;
-		background-color: lightgrey;
-	}
 
 	#homebackground {
 		background: linear-gradient(
 			    to right,
 			    rgba(0, 0, 0, 0),
 			    rgba(255, 255, 255, 50)
-			  ),url(logoedit.jpg);
+			  ),url(images/logoedit.jpg);
 	    background-attachment: fixed;
 	    background-position: auto;
 	    background-repeat: no-repeat;
@@ -177,27 +167,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Gallery Code*/
 	.column {
 	    float: left;
 	    width: 33.33%;
-	    display: none; /* Hide all elements by default */
+	    display: none;
 	}
 
 	/* Clear floats after rows */ 
@@ -207,10 +181,21 @@
 	    clear: both;
 	}
 
-	#gal {
-		width:33.33333%;
+	.gal {
+		width:33.33%;
 		height: 300px;
 		border: 4px inset white;
+		margin-top: 10px;
+	}
+
+	.gal active {
+		z-index: 1;
+   		background-color: rgb(0,0,0); /* Fallback color */
+    	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    	margin: auto;
+   		display: block;
+    	width: 80%;
+    	max-width: 700px;
 	}
 
 
@@ -224,30 +209,27 @@
 		font-size: 18px;
 		font-family: georgia;
 		position: static;
+		min-height: 40px;
 	}
 
 	/* Style the buttons */
 	.btn {
-	  border: none;
-	  outline: none;
-	  padding: 12px 16px;
-	  background-color: white;
-	  cursor: pointer;
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: white;
+		cursor: pointer;
 		background-color: #E8E241;
 		color: #464344;
 		font-variant: small-caps;  
+		font-size: 15px;
 	}
 
 	.btn:hover {
-		background-color: #464344;
-		color: #E8E241;
+	  background-color: #464344;
+	  color: yellow;
+	  font-size: 15px;
 	}
-
-	.btn:active {
-		background-color: #464344;
-		color: #E8E241;
-	}
-
 
 
 
@@ -267,7 +249,13 @@
 	}
 
 	#spondot {
-		padding: 15px;
+		padding-right: 300px;
+		padding-left: 300px;
+		padding-bottom: 10px;
+	}
+
+	#spontop {
+		width: 70%;
 	}
 
 
@@ -332,8 +320,10 @@
 		filter: grayscale();
 		border: 2px solid white;
 		border-radius: 70px; 
-		margin-left: 200px;
-		margin-right: 150px;
+	}
+
+	#footer {
+		border: none;
 	}
 
 	footer {
@@ -341,4 +331,8 @@
 		background-color: #464344;
 		position: relative;
 	  	bottom: 0;
+	  	display: block;
+	}
+
+	.footspace {
 	}
