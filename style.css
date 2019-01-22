@@ -2,6 +2,7 @@
 		background-color: #000000;
 		font-family: georgia;
 		color: white;
+		width: 98%;
 	}
 
 
@@ -10,14 +11,13 @@
 
 /*Nav Code*/
 	header {
-		margin-right: 10px;
-		padding: 0px;
 		font-variant: small-caps;
 		color: black;
 		position: fixed;
 		width: 100%;
 		top: 0px;
 		background: lightgrey;
+		border-bottom: 10px double black;
 	}
 
 	nav {
@@ -27,22 +27,22 @@
 	.name {
 		float:left;
 		font-size: 45px;
-		margin-left: 5%;
+		margin-left: 2%;
 		text-shadow: 3px 3px yellow; 
 	}
 
 	ul {
 		font-size: 23px;
 		padding-top: 20px;
-		padding-bottom: 12px;
+		padding-bottom: 5px;
 	    list-style-type: none;
 	    overflow: hidden;
 	}
 
 	.inline li{
 		display: inline;
-		padding: 15px;
-		border: 30px;
+		padding: 1%;
+		border: 0px;
 	}
 
 	a {
@@ -106,9 +106,8 @@
 	    background-repeat: no-repeat;
 	    background-size: 2000px;
 	    height: 100px;
-	    width: 100%;
+	    width: 98%;
 	}
-
 
 	#mainhome {
 		font-size: 20px;
@@ -117,7 +116,7 @@
 
 	#homerow {
 		color: black;
-		text-align: center;
+		text-align: right;
 		font-size: 25px;
 		margin: 0px;
 		width: 100%;
@@ -127,6 +126,7 @@
 		color: black;
 		text-align: center;
 		line-height: .8;
+		font-size: 10px;
 	}
 
 
@@ -135,13 +135,16 @@
 /*About Code*/
 	#aboutrow {
 		margin-top: 5px;
+		text-indent: 50px;
+		height: 100%;
 	}
 
 	#aboutmiddle {
 		float: left;
-		padding-left: 90px;
+		padding-left: 6%;
 		padding-top: 125px;
 		width: 33.333%;
+		text-indent: 0;
 	}
 
 	#aboutpic {
@@ -251,17 +254,19 @@
 	#sponname {
 		text-decoration: underline;
 		font-weight: bold;
-		text-shadow: .25px .25px yellow;
+		font-size: 25px;
 	}
 
 	#spondot {
 		padding-right: 300px;
 		padding-left: 300px;
-		padding-bottom: 10px;
+		word-spacing: 415px;
 	}
 
 	#spontop {
 		width: 70%;
+		margin-left: 17%;
+		margin-right: 15%;
 	}
 
 	#weblink {
@@ -312,15 +317,18 @@
 	#contactcontainer {
 	    border-radius: 5px;
 	    background-color: #C6C2C3;
-	    padding: 20px;
+	    padding: 15px;
 	    color: black;
 	    font-variant: small-caps;
 	    font-size: 18px;
+	    margin-left: 3%;
 	}
 
 	#contactheader {
 		color:white;
 		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 35px;
 	}
 
 
@@ -352,4 +360,5 @@
 	  	bottom: 0;
 	  	display: block;
 	  	border-top: 10px double white;
+	  	width: 100%;
 	}
