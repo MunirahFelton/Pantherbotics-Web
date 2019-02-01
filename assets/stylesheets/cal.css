@@ -1,0 +1,72 @@
+body {
+    background-color: #1e1e1e !important;
+    color: gold;
+}
+
+.view-cap, .view-container-border {
+    background-color: #373435;
+}
+
+.mv-daynames-table {
+    background: #373435;
+    color: gold;
+}
+
+td#td-print-image-id {
+    display: none;
+}
+
+td#td-print-text-id {
+    cursor: pointer;
+}
+
+.ui-rtsr-unselected {
+    background-color: #464344;
+    color: gold;
+}
+
+.ui-rtsr-selected {
+    background-color: #373435;
+}
+
+.today-button {
+    padding: 2px;
+    background: #373435;
+    color: gold;
+    border: 1px solid #373435;
+    border-radius: 3px;
+}
+
+.mv-event-container {
+    background: #1e1e1e;
+    border-top: 1px solid #373435;
+    border-bottom: 1px solid #373435;
+}
+
+.st-dtitle {
+    background: #464344;
+    color: gold;
+    border-left: 1px solid #373435;
+    border-top: 1px solid #373435;
+}
+
+.st-dtitle-nonmonth {
+    background: #646162;
+    color: gold;
+    border-left: 1px solid #373435;
+    border-top: 1px solid #373435;
+}
+
+
+.st-bg {
+    border-left: 1px solid #373435;
+}
+
+.st-dtitle-today {
+    background-color: #464344;
+    border: 1px solid #464344;
+}
+
+.st-bg-today, .st-bg-td-first {
+    background: #373435;
+}
